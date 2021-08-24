@@ -1,6 +1,6 @@
 version 1.0
 
-import "https://raw.githubusercontent.com/mondrian-scwgs/mondrian/v0.0.3/mondrian/wdl/tasks/variant_calling/vcf2maf.wdl" as vcf2maf
+import "https://raw.githubusercontent.com/mondrian-scwgs/mondrian/v0.0.4/mondrian/wdl/tasks/variant_calling/vcf2maf.wdl" as vcf2maf
 
 
 workflow Vcf2mafWorkflow{

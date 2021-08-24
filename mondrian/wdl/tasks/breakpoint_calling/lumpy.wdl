@@ -17,8 +17,8 @@ task extractSplitReads{
         memory: "8 GB"
         cpu: 1
         walltime: "48:00"
-        docker: 'quay.io/mondrianscwgs/breakpoint:v0.0.3'
-        singularity: '~{singularity_dir}/breakpoint_v0.0.3.sif'
+        docker: 'quay.io/mondrianscwgs/breakpoint:v0.0.4'
+        singularity: '~{singularity_dir}/breakpoint_v0.0.4.sif'
     }
 }
 
@@ -43,7 +43,7 @@ task lumpyExpress{
         memory: "8 GB"
         cpu: 1
         walltime: "48:00"
-        docker: 'quay.io/mondrianscwgs/breakpoint:v0.0.3'
-        singularity: '~{singularity_dir}/breakpoint_v0.0.3.sif'
+        docker: 'quay.io/mondrianscwgs/breakpoint:v0.0.4'
+        singularity: '~{singularity_dir}/breakpoint_v0.0.4.sif'
     }
 }

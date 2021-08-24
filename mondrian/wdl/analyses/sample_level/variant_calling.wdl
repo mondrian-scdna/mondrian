@@ -1,13 +1,13 @@
 version 1.0
 
 
-import "https://raw.githubusercontent.com/mondrian-scwgs/mondrian/v0.0.3/mondrian/wdl/workflows/variant_calling/museq.wdl" as museq
-import "https://raw.githubusercontent.com/mondrian-scwgs/mondrian/v0.0.3/mondrian/wdl/workflows/variant_calling/strelka.wdl" as strelka
-import "https://raw.githubusercontent.com/mondrian-scwgs/mondrian/v0.0.3/mondrian/wdl/workflows/variant_calling/mutect.wdl" as mutect
-import "https://raw.githubusercontent.com/mondrian-scwgs/mondrian/v0.0.3/mondrian/wdl/workflows/variant_calling/consensus.wdl" as consensus
-import "https://raw.githubusercontent.com/mondrian-scwgs/mondrian/v0.0.3/mondrian/wdl/workflows/variant_calling/vcf2maf.wdl" as vcf2maf
-import "https://raw.githubusercontent.com/mondrian-scwgs/mondrian/v0.0.3/mondrian/wdl/tasks/io/vcf/bcftools.wdl" as bcftools
-import "https://raw.githubusercontent.com/mondrian-scwgs/mondrian/v0.0.3/mondrian/wdl/types/variant_refdata.wdl" as refdata_struct
+import "https://raw.githubusercontent.com/mondrian-scwgs/mondrian/v0.0.4/mondrian/wdl/workflows/variant_calling/museq.wdl" as museq
+import "https://raw.githubusercontent.com/mondrian-scwgs/mondrian/v0.0.4/mondrian/wdl/workflows/variant_calling/strelka.wdl" as strelka
+import "https://raw.githubusercontent.com/mondrian-scwgs/mondrian/v0.0.4/mondrian/wdl/workflows/variant_calling/mutect.wdl" as mutect
+import "https://raw.githubusercontent.com/mondrian-scwgs/mondrian/v0.0.4/mondrian/wdl/workflows/variant_calling/consensus.wdl" as consensus
+import "https://raw.githubusercontent.com/mondrian-scwgs/mondrian/v0.0.4/mondrian/wdl/workflows/variant_calling/vcf2maf.wdl" as vcf2maf
+import "https://raw.githubusercontent.com/mondrian-scwgs/mondrian/v0.0.4/mondrian/wdl/tasks/io/vcf/bcftools.wdl" as bcftools
+import "https://raw.githubusercontent.com/mondrian-scwgs/mondrian/v0.0.4/mondrian/wdl/types/variant_refdata.wdl" as refdata_struct
 
 
 workflow SampleVariantWorkflow {

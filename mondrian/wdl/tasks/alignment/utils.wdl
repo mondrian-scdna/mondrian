@@ -17,8 +17,8 @@ task TagBamWithCellid{
         memory: "12 GB"
         cpu: 1
         walltime: "48:00"
-        docker: 'quay.io/mondrianscwgs/alignment:v0.0.3'
-        singularity: '~{singularity_dir}/alignment_v0.0.3.sif'
+        docker: 'quay.io/mondrianscwgs/alignment:v0.0.4'
+        singularity: '~{singularity_dir}/alignment_v0.0.4.sif'
     }
 
 }
@@ -31,9 +31,10 @@ task bamMerge{
         File metrics
         File metrics_yaml
         String? singularity_dir
+        Int ncores
     }
     command <<<
-        alignment_utils merge_cells --metrics ~{metrics} --outfile merged.bam --infile ~{sep=" "input_bams} --cell_id ~{sep=" "cell_ids} --tempdir temp
+        alignment_utils merge_cells --metrics ~{metrics} --outfile merged.bam --infile ~{sep=" "input_bams} --cell_id ~{sep=" "cell_ids} --tempdir temp --ncores ~{ncores}
         samtools index merged.bam
     >>>
     output{
@@ -42,10 +43,10 @@ task bamMerge{
     }
     runtime{
         memory: "12 GB"
-        cpu: 1
+        cpu: ncores
         walltime: "96:00"
-        docker: 'quay.io/mondrianscwgs/alignment:v0.0.3'
-        singularity: '~{singularity_dir}/alignment_v0.0.3.sif'
+        docker: 'quay.io/mondrianscwgs/alignment:v0.0.4'
+        singularity: '~{singularity_dir}/alignment_v0.0.4.sif'
     }
 }
 
@@ -67,8 +68,8 @@ task AddContaminationStatus{
         memory: "12 GB"
         cpu: 1
         walltime: "48:00"
-        docker: 'quay.io/mondrianscwgs/alignment:v0.0.3'
-        singularity: '~{singularity_dir}/alignment_v0.0.3.sif'
+        docker: 'quay.io/mondrianscwgs/alignment:v0.0.4'
+        singularity: '~{singularity_dir}/alignment_v0.0.4.sif'
     }
 }
 
@@ -90,7 +91,7 @@ task ClassifyFastqscreen{
         memory: "12 GB"
         cpu: 1
         walltime: "48:00"
-        docker: 'quay.io/mondrianscwgs/alignment:v0.0.3'
-        singularity: '~{singularity_dir}/alignment_v0.0.3.sif'
+        docker: 'quay.io/mondrianscwgs/alignment:v0.0.4'
+        singularity: '~{singularity_dir}/alignment_v0.0.4.sif'
     }
 }

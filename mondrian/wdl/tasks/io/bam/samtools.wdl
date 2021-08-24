@@ -17,8 +17,8 @@ task SamToBam{
         memory: "12 GB"
         cpu: 1
         walltime: "48:00"
-        docker: 'quay.io/mondrianscwgs/breakpoint:v0.0.3'
-        singularity: '~{singularity_dir}/breakpoint_v0.0.3.sif'
+        docker: 'quay.io/mondrianscwgs/breakpoint:v0.0.4'
+        singularity: '~{singularity_dir}/breakpoint_v0.0.4.sif'
     }
 }
 
@@ -39,8 +39,8 @@ task indexBam{
         memory: "12 GB"
         cpu: 1
         walltime: "48:00"
-        docker: 'quay.io/mondrianscwgs/breakpoint:v0.0.3'
-        singularity: '~{singularity_dir}/breakpoint_v0.0.3.sif'
+        docker: 'quay.io/mondrianscwgs/breakpoint:v0.0.4'
+        singularity: '~{singularity_dir}/breakpoint_v0.0.4.sif'
     }
 }
 
@@ -60,8 +60,8 @@ task Flagstat{
         memory: "12 GB"
         cpu: 1
         walltime: "48:00"
-        docker: 'quay.io/mondrianscwgs/breakpoint:v0.0.3'
-        singularity: '~{singularity_dir}/breakpoint_v0.0.3.sif'
+        docker: 'quay.io/mondrianscwgs/breakpoint:v0.0.4'
+        singularity: '~{singularity_dir}/breakpoint_v0.0.4.sif'
     }
 }
 
@@ -82,8 +82,8 @@ task mergeBams{
         memory: "12 GB"
         cpu: 1
         walltime: "48:00"
-        docker: 'quay.io/mondrianscwgs/breakpoint:v0.0.3'
-        singularity: '~{singularity_dir}/breakpoint_v0.0.3.sif'
+        docker: 'quay.io/mondrianscwgs/breakpoint:v0.0.4'
+        singularity: '~{singularity_dir}/breakpoint_v0.0.4.sif'
     }
 }
 
@@ -105,8 +105,8 @@ task viewBam{
         memory: "12 GB"
         cpu: 1
         walltime: "48:00"
-        docker: 'quay.io/mondrianscwgs/breakpoint:v0.0.3'
-        singularity: '~{singularity_dir}/breakpoint_v0.0.3.sif'
+        docker: 'quay.io/mondrianscwgs/breakpoint:v0.0.4'
+        singularity: '~{singularity_dir}/breakpoint_v0.0.4.sif'
     }
 }
 
@@ -125,7 +125,7 @@ task sortBam{
         memory: "12 GB"
         cpu: 1
         walltime: "48:00"
-        docker: 'quay.io/mondrianscwgs/breakpoint:v0.0.3'
-        singularity: '~{singularity_dir}/breakpoint_v0.0.3.sif'
+        docker: 'quay.io/mondrianscwgs/breakpoint:v0.0.4'
+        singularity: '~{singularity_dir}/breakpoint_v0.0.4.sif'
     }
 }

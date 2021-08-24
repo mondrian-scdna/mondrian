@@ -1,8 +1,8 @@
 version 1.0
 
-import "https://raw.githubusercontent.com/mondrian-scwgs/mondrian/v0.0.3/mondrian/wdl/analyses/sample_level/breakpoint_calling.wdl" as breakpoint_calling
-import "https://raw.githubusercontent.com/mondrian-scwgs/mondrian/v0.0.3/mondrian/wdl/tasks/io/csverve/csverve.wdl" as csverve
-import "https://raw.githubusercontent.com/mondrian-scwgs/mondrian/v0.0.3/mondrian/wdl/types/breakpoint_refdata.wdl" as refdata_struct
+import "https://raw.githubusercontent.com/mondrian-scwgs/mondrian/v0.0.4/mondrian/wdl/analyses/sample_level/breakpoint_calling.wdl" as breakpoint_calling
+import "https://raw.githubusercontent.com/mondrian-scwgs/mondrian/v0.0.4/mondrian/wdl/tasks/io/csverve/csverve.wdl" as csverve
+import "https://raw.githubusercontent.com/mondrian-scwgs/mondrian/v0.0.4/mondrian/wdl/types/breakpoint_refdata.wdl" as refdata_struct
 
 struct Sample{
     String sample_id

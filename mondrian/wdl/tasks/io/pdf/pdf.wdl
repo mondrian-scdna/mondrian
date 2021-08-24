@@ -18,7 +18,7 @@ task MergePdf{
         memory: "8 GB"
         cpu: 1
         walltime: "6:00"
-        docker: 'quay.io/mondrianscwgs/hmmcopy:v0.0.3'
-        singularity: '~{singularity_dir}/alignment_v0.0.3.sif'
+        docker: 'quay.io/mondrianscwgs/hmmcopy:v0.0.4'
+        singularity: '~{singularity_dir}/alignment_v0.0.4.sif'
     }
 }

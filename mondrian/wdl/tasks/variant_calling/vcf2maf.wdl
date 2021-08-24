@@ -30,8 +30,8 @@ task RunVcf2Maf{
         memory: "12 GB"
         cpu: 1
         walltime: "24:00"
-        docker: 'quay.io/mondrianscwgs/variant:v0.0.3'
-        singularity: '~{singularity_dir}/variant_v0.0.3.sif'
+        docker: 'quay.io/mondrianscwgs/variant:v0.0.4'
+        singularity: '~{singularity_dir}/variant_v0.0.4.sif'
     }
 }
 
@@ -53,8 +53,8 @@ task UpdateMafId{
         memory: "12 GB"
         cpu: 1
         walltime: "8:00"
-        docker: 'quay.io/mondrianscwgs/variant:v0.0.3'
-        singularity: '~{singularity_dir}/variant_v0.0.3.sif'
+        docker: 'quay.io/mondrianscwgs/variant:v0.0.4'
+        singularity: '~{singularity_dir}/variant_v0.0.4.sif'
     }
 }
 
@@ -75,8 +75,8 @@ task UpdateMafCounts{
         memory: "12 GB"
         cpu: 1
         walltime: "8:00"
-        docker: 'quay.io/mondrianscwgs/variant:v0.0.3'
-        singularity: '~{singularity_dir}/variant_v0.0.3.sif'
+        docker: 'quay.io/mondrianscwgs/variant:v0.0.4'
+        singularity: '~{singularity_dir}/variant_v0.0.4.sif'
     }
 }
 
@@ -96,7 +96,7 @@ task MergeMafs{
         memory: "12 GB"
         cpu: 1
         walltime: "8:00"
-        docker: 'quay.io/mondrianscwgs/variant:v0.0.3'
-        singularity: '~{singularity_dir}/variant_v0.0.3.sif'
+        docker: 'quay.io/mondrianscwgs/variant:v0.0.4'
+        singularity: '~{singularity_dir}/variant_v0.0.4.sif'
     }
 }

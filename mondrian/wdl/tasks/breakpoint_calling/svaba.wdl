@@ -1,5 +1,5 @@
 version 1.0
-import "https://raw.githubusercontent.com/mondrian-scwgs/mondrian/v0.0.3/mondrian/wdl/types/breakpoint_refdata.wdl" as refdata_struct
+import "https://raw.githubusercontent.com/mondrian-scwgs/mondrian/v0.0.4/mondrian/wdl/types/breakpoint_refdata.wdl" as refdata_struct
 
 
 task runSvaba{
@@ -28,8 +28,8 @@ task runSvaba{
         memory: "8 GB"
         cpu: num_threads
         walltime: "48:00"
-        docker: 'quay.io/mondrianscwgs/breakpoint:v0.0.3'
-        singularity: '~{singularity_dir}/breakpoint_v0.0.3.sif'
+        docker: 'quay.io/mondrianscwgs/breakpoint:v0.0.4'
+        singularity: '~{singularity_dir}/breakpoint_v0.0.4.sif'
     }
 
 }

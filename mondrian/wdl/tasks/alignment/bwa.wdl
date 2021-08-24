@@ -1,6 +1,6 @@
 version 1.0
 
-import "https://raw.githubusercontent.com/mondrian-scwgs/mondrian/v0.0.3/mondrian/wdl/types/align_refdata.wdl" as refdata_struct
+import "https://raw.githubusercontent.com/mondrian-scwgs/mondrian/v0.0.4/mondrian/wdl/types/align_refdata.wdl" as refdata_struct
 
 
 task BwaMemPaired {
@@ -35,7 +35,7 @@ task BwaMemPaired {
         memory: "12 GB"
         cpu: 1
         walltime: "8:00"
-        docker: 'quay.io/mondrianscwgs/alignment:v0.0.3'
-        singularity: '~{singularity_dir}/alignment_v0.0.3.sif'
+        docker: 'quay.io/mondrianscwgs/alignment:v0.0.4'
+        singularity: '~{singularity_dir}/alignment_v0.0.4.sif'
     }
 }
