@@ -23,17 +23,17 @@ workflow AlignFastqs{
     }
 
 
-    call fastqc.RunFastqc as fastqc_r1{
-        input:
-            fastq=fastq1,
-            singularity_dir = singularity_dir
-    }
-
-    call fastqc.RunFastqc as fastqc_r2{
-        input:
-            fastq=fastq2,
-            singularity_dir = singularity_dir
-    }
+#    call fastqc.RunFastqc as fastqc_r1{
+#        input:
+#            fastq=fastq1,
+#            singularity_dir = singularity_dir
+#    }
+#
+#    call fastqc.RunFastqc as fastqc_r2{
+#        input:
+#            fastq=fastq2,
+#            singularity_dir = singularity_dir
+#    }
 
     call fastq_screen.fastqScreen as run_fastqscreen{
         input:
