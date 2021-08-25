@@ -4,6 +4,7 @@ ADD . /app
 RUN apt-get update && apt-get install -y libltdl7 parallel && rm -rf /var/lib/apt/lists/*
 
 RUN conda install --file /app/align_requirements.yml
+RUN conda install -c bioconda sambamba
 
 RUN pip install git+https://github.com/mondrian-scwgs/mondrianutils.git@v0.0.4
 RUN pip install git+https://github.com/mondrian-scwgs/csverve.git@refactor
