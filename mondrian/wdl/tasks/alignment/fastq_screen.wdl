@@ -8,27 +8,27 @@ task fastqScreen{
     input {
         File fastq1
         File fastq2
-        File human_reference
-        File human_reference_fa_fai
-        File human_reference_fa_amb
-        File human_reference_fa_ann
-        File human_reference_fa_bwt
-        File human_reference_fa_pac
-        File human_reference_fa_sa
-        File mouse_reference
-        File mouse_reference_fa_fai
-        File mouse_reference_fa_amb
-        File mouse_reference_fa_ann
-        File mouse_reference_fa_bwt
-        File mouse_reference_fa_pac
-        File mouse_reference_fa_sa
-        File salmon_reference
-        File salmon_reference_fa_fai
-        File salmon_reference_fa_amb
-        File salmon_reference_fa_ann
-        File salmon_reference_fa_bwt
-        File salmon_reference_fa_pac
-        File salmon_reference_fa_sa
+        String human_reference
+        String human_reference_fa_fai
+        String human_reference_fa_amb
+        String human_reference_fa_ann
+        String human_reference_fa_bwt
+        String human_reference_fa_pac
+        String human_reference_fa_sa
+        String mouse_reference
+        String mouse_reference_fa_fai
+        String mouse_reference_fa_amb
+        String mouse_reference_fa_ann
+        String mouse_reference_fa_bwt
+        String mouse_reference_fa_pac
+        String mouse_reference_fa_sa
+        String salmon_reference
+        String salmon_reference_fa_fai
+        String salmon_reference_fa_amb
+        String salmon_reference_fa_ann
+        String salmon_reference_fa_bwt
+        String salmon_reference_fa_pac
+        String salmon_reference_fa_sa
         String cell_id
         String? singularity_dir
     }

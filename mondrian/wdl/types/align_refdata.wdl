@@ -1,33 +1,33 @@
 version 1.0
 
 struct AlignRefdata{
-    File reference
-    File reference_fa_1_ebwt
-    File reference_fa_2_ebwt
-    File reference_fa_3_ebwt
-    File reference_fa_4_ebwt
-    File reference_fa_fai
-    File reference_fa_amb
-    File reference_fa_ann
-    File reference_fa_bwt
-    File reference_fa_pac
-    File reference_fa_rev_1_ebwt
-    File reference_fa_rev_2_ebwt
-    File reference_fa_sa
-    File mouse_reference
-    File mouse_reference_fa_amb
-    File mouse_reference_fa_ann
-    File mouse_reference_fa_bwt
-    File mouse_reference_fa_fai
-    File mouse_reference_fa_pac
-    File mouse_reference_fa_sa
-    File salmon_reference
-    File salmon_reference_fa_amb
-    File salmon_reference_fa_ann
-    File salmon_reference_fa_bwt
-    File salmon_reference_fa_fai
-    File salmon_reference_fa_pac
-    File salmon_reference_fa_sa
-    File fastqscreen_classifier_training_data
+    String reference
+    String reference_fa_1_ebwt
+    String reference_fa_2_ebwt
+    String reference_fa_3_ebwt
+    String reference_fa_4_ebwt
+    String reference_fa_fai
+    String reference_fa_amb
+    String reference_fa_ann
+    String reference_fa_bwt
+    String reference_fa_pac
+    String reference_fa_rev_1_ebwt
+    String reference_fa_rev_2_ebwt
+    String reference_fa_sa
+    String mouse_reference
+    String mouse_reference_fa_amb
+    String mouse_reference_fa_ann
+    String mouse_reference_fa_bwt
+    String mouse_reference_fa_fai
+    String mouse_reference_fa_pac
+    String mouse_reference_fa_sa
+    String salmon_reference
+    String salmon_reference_fa_amb
+    String salmon_reference_fa_ann
+    String salmon_reference_fa_bwt
+    String salmon_reference_fa_fai
+    String salmon_reference_fa_pac
+    String salmon_reference_fa_sa
+    String fastqscreen_classifier_training_data
 }
 

@@ -7,13 +7,13 @@ task BwaMemPaired {
     input {
         File fastq1
         File fastq2
-        File reference
-        File reference_fa_fai
-        File reference_fa_amb
-        File reference_fa_ann
-        File reference_fa_bwt
-        File reference_fa_pac
-        File reference_fa_sa
+        String reference
+        String reference_fa_fai
+        String reference_fa_amb
+        String reference_fa_ann
+        String reference_fa_bwt
+        String reference_fa_pac
+        String reference_fa_sa
         String library_id
         String lane_id
         String sample_id
